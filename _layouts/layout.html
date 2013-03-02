@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	{% include head_block.html %}	
+	
+	<body data-spy="scroll" data-target=".sidenav-container">		
+		<div class="container">
+			{% include top_header.html %}		
+			
+			<div class="content">			
+				{{ content }}		
+			</div>		
+
+			{% include footer.html %}	
+		</div>	
+		
+		{% include scripts.html %}
+	</body>
+
+</html>

@@ -1,0 +1,24 @@
+<div class="masthead">
+	<div class="masthead-nav">
+	    <ul class="nav nav-pills pull-right">
+			{% for weight in (0..10) %}
+			  {% for p in site.pages %}
+			    {% if p.weight == weight %}
+					{% if p.url contains "/page" %}
+					
+					{% else %}
+			      		<li {% if p.url == page.url %}class="active"{% endif %}>
+			        		<a href="{{ p.url }}">
+			          			{{ p.nav_title }}
+			        		</a>
+			      		</li>
+					{% endif %}
+			    {% endif %}
+			  {% endfor %}
+			{% endfor %}						
+	    </ul>
+	</div>
+	<div class="masthead-img">
+    	<a href="/"><img src="/img/title-img.png" alt="Title Image" /></a>
+	</div>
+</div>

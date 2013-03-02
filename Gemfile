@@ -1,0 +1,11 @@
+source 'http://rubygems.org'
+ruby '1.9.3'
+
+gem 'jekyll'
+gem 'jekyll-pagination'
+gem 'rdiscount'
+gem 'jekyll-asset-pipeline'
+gem 'therubyracer'
+gem 'less'
+gem 'yui-compressor'
+gem 'jekyll-s3'
